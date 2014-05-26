@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal" >
+
+        <RadioGroup
+            android:id="@+id/radio_group_matches_classification"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="@dimen/radio_button_margin"
+            android:layout_marginRight="@dimen/radio_button_margin"
+            android:orientation="horizontal" >
+
+            <RadioButton
+                android:id="@+id/radioMatch"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@drawable/radiobuttonbackground"
+                android:button="@android:color/transparent"
+                android:checked="true"
+                android:onClick="onRadioButtonClicked"
+                android:text="@string/radio_button_matches" />
+
+            <RadioButton
+                android:id="@+id/radioClassification"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@drawable/radiobuttonbackground"
+                android:button="@android:color/transparent"
+                android:onClick="onRadioButtonClicked"
+                android:text="@string/radio_button_classification" />
+        </RadioGroup>
+    </LinearLayout>
+
+    <ListView
+        android:id="@+id/matches_list"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="#fff"
+        android:choiceMode="singleChoice"
+        android:divider="@android:color/darker_gray"
+        android:dividerHeight="0.1dp"
+        android:textColor="@android:color/white" />
+
+</LinearLayout>
