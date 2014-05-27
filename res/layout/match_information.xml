@@ -4,16 +4,17 @@
     android:layout_height="match_parent"
     android:orientation="vertical" >
 
-    <LinearLayout	
+    <LinearLayout	
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:orientation="horizontal" >
+        android:orientation="horizontal"
+        android:background="@color/macth_info_item_header" >
 
         <TextView
             android:id="@+id/data_hora_jogo"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="TextView" />
+            android:text="TextView"  />
 
         <TextView
             android:id="@+id/local_jogo"
@@ -36,12 +37,14 @@
                 android:id="@+id/left_team_name"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="TextView" />
+                android:text="TextView"
+                android:layout_gravity="center_vertical"
+                android:textAppearance="?android:attr/textAppearanceMedium"  />
 
             <ImageView
                 android:id="@+id/left_team_flag"
-                android:layout_width="40dp"
-                android:layout_height="40dp"
+                android:layout_width="60dp"
+                android:layout_height="60dp"
                 android:layout_alignParentLeft="true"
                 android:layout_centerVertical="true"
                 android:contentDescription="@string/hello"
@@ -54,25 +57,33 @@
                 android:id="@+id/left_team_gol"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"                
-                android:text="TextView" />
+                android:text="TextView"
+                android:layout_gravity="center_vertical"
+                android:textAppearance="?android:attr/textAppearanceMedium"  />
 
             <TextView
                 android:id="@+id/textViewx"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
+                android:paddingLeft="@dimen/x_padding"
+                android:paddingRight="@dimen/x_padding"
                 android:text="X"
-                android:textAppearance="?android:attr/textAppearanceLarge" />          
+                style="@style/textBold"
+                android:layout_gravity="center_vertical"
+                android:textAppearance="?android:attr/textAppearanceMedium" />
 
             <TextView
                 android:id="@+id/right_team_gol"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"                
-                android:text="TextView" />
+                android:text="TextView" 
+                android:layout_gravity="center_vertical"
+                android:textAppearance="?android:attr/textAppearanceMedium" />
             
              <ImageView
                 android:id="@+id/right_team_flag"
-                android:layout_width="40dp"
-                android:layout_height="40dp"
+                android:layout_width="60dp"
+                android:layout_height="60dp"
                 android:layout_alignParentLeft="true"
                 android:layout_centerVertical="true"
                 android:contentDescription="@string/hello"
@@ -85,7 +96,9 @@
                 android:id="@+id/right_team_name"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="TextView" />
+                android:text="TextView" 
+                android:layout_gravity="center_vertical"
+                android:textAppearance="?android:attr/textAppearanceMedium" />
         </LinearLayout>
     </RelativeLayout>
 

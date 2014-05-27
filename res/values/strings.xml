@@ -9,15 +9,46 @@
     <string name="drawer_open">Open navigation drawer</string>
     <string name="drawer_close">Close navigation drawer</string>
     
-    <string name="radio_button_matches">Matches</string>
-    <string name="radio_button_classification">Classification</string>
+    <string name="radio_button_matches">Jogos</string>
+    <string name="radio_button_classification">Classificação</string>
     
     
-    <string name="label_groups_stage">Groups Stage</string>
+    <string name="label_home">Mensagens</string>
+    <string name="label_groups_stage">Fase de Grupos</string>
     
-    <string name="brazil">Brazil</string>
-    
-        
+    <string name="brazil">Brasil</string>
+    <string name="croacia">Croácia</string>
+    <string name="mexico">México</string>
+    <string name="camaroes">Camarões</string>
+    <string name="espanha">Espanha</string>
+    <string name="holanda">Holanda</string>
+    <string name="chile">Chile</string>
+    <string name="australia">Austrália</string>
+    <string name="colombia">Colômbia</string>
+    <string name="grecia">Grécia</string>
+    <string name="costa_do_marfim">Costa do Marfim</string>
+    <string name="japao">Japão</string>
+    <string name="uruguai">Uruguai</string>
+    <string name="costa_rica">Costa Rica</string>
+    <string name="inglaterra">Inglaterra</string>
+    <string name="italia">Itália</string>
+    <string name="suica">Suiça</string>
+    <string name="equador">Equador</string>
+    <string name="franca">França</string>
+    <string name="honduras">Honduras</string>
+    <string name="argentina">Argentina</string>
+    <string name="bosnia">Bósnia</string>
+    <string name="ira">Irã</string>
+    <string name="nigeria">Nigéria</string>
+    <string name="alemanha">Alemanha</string>
+    <string name="portugal">Portugal</string>
+    <string name="gana">Gana</string>
+    <string name="estados_unidos">Estados Unidas da América</string>
+    <string name="belgica">Bélgica</string>
+    <string name="argelia">Argélia</string>
+    <string name="russia">Rússia</string>
+    <string name="coreia_do_sul">Coreia do Sul</string>
+      
     
     
     <string-array name="groups">

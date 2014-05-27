@@ -2,43 +2,58 @@
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:orientation="vertical" >
+    android:orientation="vertical"
+    android:paddingBottom="@dimen/frame_padding"
+    android:paddingLeft="@dimen/frame_padding"
+    android:paddingRight="@dimen/frame_padding"
+    android:paddingTop="@dimen/frame_padding" >
 
-    <LinearLayout
+    <RelativeLayout
         android:layout_width="fill_parent"
-        android:layout_height="wrap_content"
-        android:orientation="horizontal" >
+        android:layout_height="80dip" >
 
-        <RadioGroup
-            android:id="@+id/radio_group_matches_classification"
-            android:layout_width="fill_parent"
-            android:layout_height="wrap_content"
-            android:layout_centerHorizontal="true"
-            android:layout_centerVertical="true"
-            android:layout_marginLeft="@dimen/radio_button_margin"
-            android:layout_marginRight="@dimen/radio_button_margin"
-            android:orientation="horizontal" >
+        <LinearLayout
+            android:layout_centerInParent="true"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" >
 
-            <RadioButton
-                android:id="@+id/radioMatch"
-                android:layout_width="wrap_content"
+            <RadioGroup
+                android:id="@+id/radio_group_matches_classification"
+                android:layout_width="fill_parent"
                 android:layout_height="wrap_content"
-                android:background="@drawable/radiobuttonbackground"
-                android:button="@android:color/transparent"
-                android:checked="true"
-                android:onClick="onRadioButtonClicked"
-                android:text="@string/radio_button_matches" />
+                android:layout_centerHorizontal="true"
+                android:layout_centerVertical="true"
+                android:orientation="horizontal" >
 
-            <RadioButton
-                android:id="@+id/radioClassification"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:background="@drawable/radiobuttonbackground"
-                android:button="@android:color/transparent"
-                android:onClick="onRadioButtonClicked"
-                android:text="@string/radio_button_classification" />
-        </RadioGroup>
-    </LinearLayout>
+                <RadioButton
+                    android:id="@+id/radioMatch"
+                    android:layout_width="120dip"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/radio_button_margin"
+                    android:layout_marginRight="@dimen/radio_button_margin"
+                    android:layout_weight="0.39"
+                    android:background="@drawable/radiobuttonbackground"
+                    android:button="@android:color/transparent"
+                    android:checked="true"
+                    android:gravity="center"
+                    android:onClick="onRadioButtonClicked"
+                    android:text="@string/radio_button_matches" />
+
+                <RadioButton
+                    android:id="@+id/radioClassification"
+                    android:layout_width="120dip"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/radio_button_margin"
+                    android:layout_marginRight="@dimen/radio_button_margin"
+                    android:background="@drawable/radiobuttonbackground"
+                    android:button="@android:color/transparent"
+                    android:onClick="onRadioButtonClicked"
+                    android:gravity="center"
+                    android:text="@string/radio_button_classification" />
+            </RadioGroup>
+
+        </LinearLayout>
+    </RelativeLayout>
 
     <ListView
         android:id="@+id/matches_list"
